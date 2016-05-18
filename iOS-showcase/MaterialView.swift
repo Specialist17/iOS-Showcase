@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class MaterialView: UIView {
 
     override func awakeFromNib() {

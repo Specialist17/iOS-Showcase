@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		909687161C9FA55000562BDB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909687151C9FA55000562BDB /* Post.swift */; };
 		90A159D51C9CBF1800F076CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A159D41C9CBF1800F076CC /* AppDelegate.swift */; };
 		90A159D71C9CBF1800F076CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A159D61C9CBF1800F076CC /* ViewController.swift */; };
 		90A159DA1C9CBF1800F076CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A159D81C9CBF1800F076CC /* Main.storyboard */; };
@@ -24,11 +25,14 @@
 		90A159FF1C9DFADE00F076CC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A159FC1C9DFADE00F076CC /* FBSDKCoreKit.framework */; };
 		90A15A001C9DFADE00F076CC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A159FD1C9DFADE00F076CC /* FBSDKLoginKit.framework */; };
 		90A15A041C9E1AFB00F076CC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A15A031C9E1AFB00F076CC /* DataService.swift */; };
+		90A15A061C9E4B4000F076CC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A15A051C9E4B4000F076CC /* FeedVC.swift */; };
+		90A15A081C9E4BB800F076CC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A15A071C9E4BB800F076CC /* PostCell.swift */; };
 		B199600863BF2E0034096F4E /* Pods_iOS_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D7C08311948C2A8E8468A5 /* Pods_iOS_showcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C997F909D57DC2DE3D4F024 /* Pods-iOS-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-showcase/Pods-iOS-showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		909687151C9FA55000562BDB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		90A159D11C9CBF1800F076CC /* iOS-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A159D41C9CBF1800F076CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A159D61C9CBF1800F076CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		90A159FC1C9DFADE00F076CC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		90A159FD1C9DFADE00F076CC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		90A15A031C9E1AFB00F076CC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		90A15A051C9E4B4000F076CC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		90A15A071C9E4BB800F076CC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B7D7C08311948C2A8E8468A5 /* Pods_iOS_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF3F1BE713FC219F3ED3083 /* Pods-iOS-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-showcase/Pods-iOS-showcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +111,6 @@
 				90A159E71C9CBF6F00F076CC /* Model */,
 				90A159E61C9CBF6200F076CC /* Resources */,
 				90A159D41C9CBF1800F076CC /* AppDelegate.swift */,
-				90A159D61C9CBF1800F076CC /* ViewController.swift */,
 				90A159D81C9CBF1800F076CC /* Main.storyboard */,
 				90A159DB1C9CBF1800F076CC /* Assets.xcassets */,
 				90A159DD1C9CBF1800F076CC /* LaunchScreen.storyboard */,
@@ -128,6 +133,7 @@
 		90A159E71C9CBF6F00F076CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				909687151C9FA55000562BDB /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 				90A159F21C9DEE9000F076CC /* MaterialView.swift */,
 				90A159F71C9DF3AA00F076CC /* MaterialButton.swift */,
 				90A159F91C9DF5E900F076CC /* MaterialTextField.swift */,
+				90A15A071C9E4BB800F076CC /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -145,6 +152,8 @@
 		90A159E91C9CBF7C00F076CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				90A159D61C9CBF1800F076CC /* ViewController.swift */,
+				90A15A051C9E4B4000F076CC /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -313,9 +322,12 @@
 				90A15A041C9E1AFB00F076CC /* DataService.swift in Sources */,
 				90A159F31C9DEE9000F076CC /* MaterialView.swift in Sources */,
 				90A159D71C9CBF1800F076CC /* ViewController.swift in Sources */,
+				90A15A061C9E4B4000F076CC /* FeedVC.swift in Sources */,
+				90A15A081C9E4BB800F076CC /* PostCell.swift in Sources */,
 				90A159D51C9CBF1800F076CC /* AppDelegate.swift in Sources */,
 				90A159F61C9DEEDF00F076CC /* Constants.swift in Sources */,
 				90A159F81C9DF3AA00F076CC /* MaterialButton.swift in Sources */,
+				909687161C9FA55000562BDB /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
